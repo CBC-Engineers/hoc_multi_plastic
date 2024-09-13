@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "hoc_multi_plastic"
+authors = [{name = "Ricky L Teachey Jr", email = "ricky@teachey.org"}]
+license = {file = "LICENSE"}
+dynamic = ["version", "description"]
+dependencies = [
+    "aashto_plastic_pipe_check @ git+https://github.com/CBC-Engineers/aashto-plastic-pipe-check@v0.1.1",
+    "hoc_crawler @ git+https://github.com/CBC-Engineers/hoc-crawler@v0.1.1",
+    "ipywidgets >=8.1",
+]
+
+[project.urls]
+Home = "https://github.com/CBC-Engineers/hoc_multi_plastic"
+
+[project.optional-dependencies]
+test = [
+#    "pytest >=8.3",
+]
